@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 120px;
+            left: 60px;
+        }
+        .sun{
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 140px;
+            left: 340px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 40px rgba(250, 206, 125, 1);
+        }
+         .earth{
+            background-color: rgb(0, 195, 255);
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 90px;
+            left: 220px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            animation: rot 7s linear infinite;
+            transform-origin: 200px 100px;
+        } 
+        .mars{
+            background-color: rgb(238, 255, 0);
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 13px;
+            left: 135px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            animation: rot 10s linear infinite;
+            transform-origin: 308px 183px;
+        }
+        @keyframes rot{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        span{
+            position: absolute;
+            top: 12px;
+            left: 4px;
+            text-align: center;
+        }
+        .su{
+            position: absolute;
+            top: 27px;
+            left: 17px;
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="sun"><span class="su">Sun</span></div>
+      <div class="earth"><span>Earth</span></div>
+      <div class="mars"><span>Mars</span></div>
+    </div>
+</body>
+</html>
